@@ -1,0 +1,286 @@
+    *{
+	margin:0;
+	padding:0;
+	}
+	ul{
+		list-style-type: none;
+	}
+	body{
+		background:#FAFAFA;
+	}
+	a{
+		text-decoration:none ;
+	}
+	.header{
+		height:70px;
+		width:100%;
+		margin:0 auto;
+	}
+	.header .nav{
+		width:1300px;
+		height:60px;
+		margin:0 auto;
+	}
+
+	.header .nav .c{
+		width:150px;
+		height:60px;
+		float:left;
+		text-align:center;
+		/*border:2px solid white;*/
+	}
+	.header .nav .u{
+		width:1100px;
+		height:60px;
+		/* line-height:60px; */
+		float:left;
+		/*border:2px solid white;*/
+	}
+	.header .nav .u ul{
+		width:50px;
+		height:30px;
+		list-style-type: none;
+		display:inline;
+		margin-top:-10px;
+		/*border:1px solid red;*/
+	}
+	.header .nav .u ul li{
+		width:50px;
+		height:30px;
+		display:inline;
+		font-size:20px;
+		
+		padding:6px 6px;
+		margin-left:30px;
+		/*border:1px solid red;*/
+	}
+	.header .nav .u ul li a{
+		text-decoration:none;
+		font-size:20px;
+		line-height:60px;
+		color:black;
+	}
+	.de{
+		/*border:2px solid black;*/
+		float:right;
+
+	}
+	.denglu{		
+		border-radius:5px;
+		background:#E38B8C;
+	}
+	
+	.zhuce{
+		border:1px solid black;
+	}
+	.sousuo{
+		margin-top:100px;
+		text-align:center;
+		
+	}
+	.biao{
+		width:850px;
+		height:80px;
+		margin:0 auto;
+		text-align:left;
+		
+		/*border:1px solid red;*/
+		
+	}
+	#sou1{
+		background:none;
+		border:2px solid #C2C2C2;
+		width:300px;
+		height:30px;
+		border-radius:5px;
+		vertical-align:middle
+	}
+	
+	.main1{
+		width:100%;
+		height:600px;
+		/*height:50%;*/
+		position: relative;
+		/*border:1px solid red;*/
+		margin: 0 auto;
+		/*display: table;*/
+		background:url(../images/139-150430112024.jpg);
+	}
+	.main1_a{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width:500px;
+		/*clear:both;*/
+		height:250px;
+		text-align:center;
+		/*border:1px solid red;*/
+	}
+	.h1{
+		width:150px; 
+		height:10px; 
+		margin-top:20px; 
+		float:left;
+	}
+	.h12{
+		width:200px; 
+		height:50px; 
+		float:left; 
+		text-align:center; 
+		font-size:30px; 
+		margin-top:5px; 
+		color:white;
+	}
+	.tu{
+		width:50px;
+		height:50px;
+		/*margin-top:200px;*/
+		font-size:20px;
+		color:white;
+		line-height:100px;
+		float:left;
+		margin-left:40px;
+		/*margin: 0 auto;
+	*/	/*border:1px solid red;*/
+		border-radius:100px;
+	}
+	#tu1{
+		background:url(../images/class/1.png);
+	}
+	#tu2{
+		background:url(../images/class/2.png);
+	}
+	#tu3{
+		background:url(../images/class/3.png);
+	}
+	#tu4{
+		background:url(../images/class/4.png);
+	}
+	#tu5{
+		background:url(../images/class/5.png);
+	}
+	#tu6{
+		background:url(../images/class/7.png);
+	}
+	.main{
+		width:1300px;
+		height:1500px;
+		/*border:1px solid red;*/
+		margin: 0 auto;
+	}
+	.tu5{
+		width:180px;
+		height:100px;
+		/*margin-top:200px;*/
+		font-size:20px;
+		color:white;
+		line-height:100px;
+		float:left;
+		margin-left:70px;
+		text-align:center;
+		/*border:1px solid red;*/
+		border-radius:25px;
+	}
+	.no2{
+		height:1050px;
+		/*border:1px solid red;*/
+		margin-top:150px;	
+	}
+	.h2{
+		width:550px; 
+		height:100px; 
+		float:left; 
+		margin-top:50px;
+	}
+	.h21{
+		width:200px; 
+		height:100px; 
+		float:left; 
+		text-align:center; 
+		font-size:30px; 
+		margin-top:30px; 
+		color:#8F8C8C;
+	}
+	.co{
+		text-align:center;
+		
+		width:230px;
+		height:500px;
+		/*margin-left:5px;*/
+		padding:10px 10px;
+		float:left;
+		/*border:1px solid red;*/
+	}
+	.co p{
+		color:black;
+		text-align:left;
+	}
+	#img7{
+		width:30px;
+		height:30px;
+		margin-left:15px;
+		float:left;
+		/*margin:0 auto;*/
+		/*border:1px solid red;*/
+		border-radius:100px;
+	}
+	#page{
+		margin-top:80px;
+		text-align:center;
+	}
+	#page ul li{
+		display:inline;
+	}
+	
+	.bot {
+            clear: left;
+            width: 100%;
+            height: 200px;
+            background: #333333;
+            padding-top: 32px;
+            margin-top: 100px
+        }
+
+        .b1 {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .b1 ul {
+            display: inline-block;
+            margin-right: 80px;
+        }
+
+        .b1 li {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .b1 li a {
+            font-size: 15px;
+            color: #BDB8B8;
+        }
+        .b2{
+            width: 280px;
+            height: 150px;
+            /* background: red; */
+            float: right;
+            margin-top: -130px;
+            margin-right: 280px;
+        }
+        .b2 li{
+            list-style: none;
+            color: #BDB8B8;
+        }
+       
+        .erwei{
+            float: right;
+            margin-top: -80px;
+        }
+        .erwei img{
+            width: 100px;
+            height: 100px;
+        }

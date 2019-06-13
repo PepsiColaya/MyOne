@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="css/detail.css">
+    <title>详情页</title>
+</head>
+<body>
+    <div class="header-box">
+        <div class="nav-box">
+            <div class="nav-left">
+                <a href="" class="logo"></a>
+                <a href="" target="_Blank" class="hover">发现</a>
+                <a href="" target="_Blank" class="hover">最新</a>
+                <a href="" target="_Blank" class="hover">美思</a>
+                <a href="" target="_Blank" class="hover">活动
+                    <img src="./images/em-new.svg " alt="" style="margin-left: 2px; vertical-align: middle">
+                </a>
+                <a href="" target="_Blank" class="hover">教育</a>
+            </div>
+            <div class="nav-right">
+                <form action="">
+                    <input type="text" placeholder="海报" name="search">
+                    <button type="submit" class="go"></button>
+                </form>
+                <a href="" id="login">登录</a>
+                <a href="" id="register">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="block-box">
+            <div class="block-left">
+                <p class="sc-bth">收藏</p>
+                <p class="sc-bth" style="float: right; margin-top: -30px;">返回</p>
+                <div>
+                    <img src="./images/cont/234.png" class="bigimg">
+                </div>
+                <div>
+                    <a href="">分享到：</a>
+                    <a href="">新浪微博</a>
+                    <a href="">QQ空间</a>
+                    <a href="">微信</a>
+                </div>
+            </div>
+            <div class="block-right">
+                <div class="imginfo">
+                    <img src="./images/789.jpg" alt="">
+
+                    <div class="z">
+                        <span style="color: #333;">zhang</span>
+                        <p style="font-size:20px;">发布于11个月前</p>
+                    </div>
+                </div>
+                <div>
+                <ul id="ul1"></ul>
+                <textarea id="txt"></textarea>
+                <button id="pinglun">
+                评论
+                </button>
+                </div>
+             </div>
+        </div>
+    </div>
+            <div class="footer-box">
+                <div class="links">
+                    <div class="link">
+                        <a href="">花瓣首页</a>
+                        <a href="#">花瓣采集工具</a>
+                        <a href="#">花瓣官方博客</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">联系与合作</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">用户反馈</a>
+                        <a href="#">花瓣 LOGO 标准文档</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">移动客户端</a>
+                        <a href="#">花瓣 iPhone 版</a>
+                        <a href="#">花瓣 Android 版</a>
+                        <a href="#">花瓣 HD</a>
+                    </div>
+                    <div class="follow">
+                        关注我们
+                        <br> 新浪微博：@花瓣网
+                        <br> 官方 QQ：534529940
+                    </div>
+                    <img src="./images/erwei.png" style="width: 120px;margin-top: 30px;margin-left: 280px;">
+                </div>
+            </div>
+</body>
+</html>
+<script type="text/javascript">
+var num = 0;//标识是第几条记录
+//获取ul对象
+var ul1 = document.getElementById("ul1");
+
+//给标签绑定事件
+//1、获取标签
+var btnp = document.getElementById("pinglun");
+//2、绑定事件
+pinglun.onclick = function(){
+    //功能：添加文本域中的内容到ul标签中
+    //alert("haha");
+    //1、拿到文本域对象
+    var text = document.getElementById("txt");
+    //2、判断文本域对象的内容是否为空，为空进行提示，不为空进行添加
+    //获取文本域txtarea标签中的内容使用：textarea.value
+    if(txt.value==""){
+        alert("开玩笑，不添加内容也能发表吗？");
+    }else{
+        //alert("添加成功");
+        //1、获取文本域的内容txt.value
+        //2、创建li标签对象
+        var li = document.createElement("li");
+        num++;//个数加1
+        //3、将获取的内容添加到li标签中
+        li.innerHTML = num+"--"+txt.value + "<a href='#'>删除</a>"
+        //为a标签绑定单击事件
+        //获取a标签对象
+        var a = li.getElementsByTagName("a")[0];
+        a.onclick = function(){
+            //点击的时候删除当前a所在的li标签
+            //this表示当前事件所作用的标签对象 this==a对象
+            var pli = this.parentNode;//a标签的父类li标签
+            //父类节点.removeChild(子类节点)
+            ul1.removeChild(pli);
+        }
+        //5、在之前添加
+        //获取ul
+        var first = ul1.firstChild;
+        ul1.insertBefore(li,first);
+        text.value = "";
+    }
+}
+</script>
